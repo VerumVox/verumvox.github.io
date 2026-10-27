@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VERUM VOX — Кастомные акустические системы & Усилители</title>
+    <style>
+        :root {
+            --bg-color: #0d0d0f;
+            --panel-color: #16161a;
+            --accent-color: #d1a153; /* Дорогой приглушенный золотой/латунный оттенок */
+            --text-main: #e1e1e6;
+            --text-muted: #8a8a93;
+            --border-color: #26262b;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 0 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 80px 0;
+        }
+
+        header {
+            margin-bottom: 80px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 40px;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--text-main);
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        .tagline {
+            color: var(--text-muted);
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .intro {
+            font-size: 22px;
+            font-weight: 300;
+            color: var(--text-main);
+            margin-bottom: 60px;
+            max-width: 700px;
+        }
+
+        .intro strong {
+            color: var(--accent-color);
+            font-weight: 500;
+        }
+
+        h2 {
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 30px;
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 80px;
+        }
+
+        .card {
+            background-color: var(--panel-color);
+            border: 1px solid var(--border-color);
+            padding: 30px;
+            border-radius: 4px;
+            transition: border-color 0.3s ease;
+        }
+
+        .card:hover {
+            border-color: var(--accent-color);
+        }
+
+        .card h3 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 14px;
+            linear-height: 1.5;
+        }
+
+        .manifesto {
+            background-color: var(--panel-color);
+            border-left: 3px solid var(--accent-color);
+            padding: 40px;
+            margin-bottom: 80px;
+        }
+
+        .manifesto p {
+            font-style: italic;
+            font-size: 16px;
+            color: var(--text-main);
+        }
+
+        footer {
+            border-top: 1px solid var(--border-color);
+            padding-top: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .contacts {
+            font-size: 16px;
+        }
+
+        .contacts a {
+            color: var(--text-main);
+            text-decoration: none;
+            border-bottom: 1px dashed var(--accent-color);
+            padding-bottom: 2px;
+            transition: color 0.3s ease;
+        }
+
+        .contacts a:hover {
+            color: var(--accent-color);
+        }
+
+        .copyright {
+            color: var(--text-muted);
+            font-size: 12px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 40px 0; }
+            header { margin-bottom: 40px; }
+            .intro { font-size: 18px; }
+            footer { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header>
+            <div class="logo">Verum<span>Vox</span></div>
+            <div class="tagline">Кастомная инженерия звука</div>
+        </header>
+
+        <section>
+            <p class="intro">
+                Проектирование и ручная сборка <strong>акустических систем</strong> и <strong>усилителей</strong>. Полный цикл физической калибровки и настройки звукового тракта в вашем помещении <strong>под ключ</strong>.
+            </p>
+        </section>
+
+        <h2>Направления работы</h2>
+        <section class="grid">
+            <div class="card">
+                <h3>Усилители</h3>
+                <p>Аналоговая схемотехника, бескомпромиссная элементная база и ручной монтаж шасси. Отсутствие паразитных шумов и честный запас по мощности для раскрытия любой сложной акустики.</p>
+            </div>
+            <div class="card">
+                <h3>Колонки</h3>
+                <p>Расчет и изготовление тяжелых, абсолютно жестких корпусов. Подбор и калибровка излучателей, проектирование индивидуальных кроссоверов для бесшовного воспроизведения частот.</p>
+            </div>
+            <div class="card">
+                <h3>Инсталляция</h3>
+                <p>Акустический аудит помещения, локализация комнатных мод и стоячих волн. Ювелирная настройка фазы и расстановка систем под конкретную точку прослушивания.</p>
+            </div>
+        </section>
+
+        <section class="manifesto">
+            <p>«Масс-маркет приучил людей к пластиковому, искусственно разукрашенному звуку. Задача Verum Vox — вернуть физическую точность, честность сигнала и первозданную энергию каждой аудиодорожки в вашем пространстве». — Ручная работа мастера.</p>
+        </section>
+
+        <footer>
+            <div class="contacts">
+                Связаться с мастером: <a href="mailto:verum.vox@gmail.com">verum.vox@gmail.com</a>
+            </div>
+            <div class="copyright">
+                &copy; 2026 VERUM VOX. LAB & WORKSHOP.
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>
